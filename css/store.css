@@ -1,0 +1,66 @@
+@import url(reset.css);
+
+/*store.css*/
+
+
+/*common*/
+
+@font-face{font-family:nanum; src:url(../font/NanumGothic.ttf);}
+body{font-family:nanum;background:#dad8c1;color:#fff;}
+a{color:#fff;text-decoration:none;}
+
+#wrap{width:100%;}
+
+/*layout*/
+
+
+
+/*fixed_Menu*/
+.fixed_Menu{width:100%;margin:0 auto;}
+.fixed_Menu div.border{width:96%; height:92.5%;position:fixed;top:0;left:auto;border:35px solid #fff;}
+.fixed_Menu ul li:nth-of-type(1){position:fixed;top:7%;left:3.5%;}
+.fixed_Menu ul li:nth-of-type(1):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(2){position:fixed;top:7%;right:3.5%;}
+.fixed_Menu ul li:nth-of-type(2):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(3){position:fixed;bottom:7%;left:3.5%;}
+.fixed_Menu ul li:nth-of-type(3):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(4){position:fixed;bottom:7%;right:3.5%;z-index:99;cursor:pointer;}
+.fixed_Menu ul li:nth-of-type(4) dl{display:none;position:fixed;bottom:7%;right:3.5%;}
+.fixed_Menu ul li:nth-of-type(4) dl dd{float:left;}
+.fixed_Menu ul li:nth-of-type(4) dl dd:hover{opacity:0.9;}
+
+
+.fixed_Menu ul li:nth-of-type(4):hover dl{display:block;}
+
+
+
+/*하위메뉴*/
+.bottom_Menu ul{position:absolute;top:87%;left:40%;}
+.bottom_Menu ul li{float:left;margin:0 15px;color:#fff;}
+.bottom_Menu ul li a{color:#fff;text-decoration:none;font-size:20px;}
+.bottom_Menu ul li a:hover{text-decoration:underline;}
+
+/*container*/
+#container{width:100%;margin:9% auto;text-align:center;position:fixed;top:0;left:auto;z-index:99;}
+#container h2{font-size:30px;font-weight:bold;margin-bottom:15px;color:#fff;}
+#container span.border{display:block; width:50px;height:3px;background-color:#fff;margin:0 auto;}
+
+#container .store{width:60%;margin:30px auto;}
+.store form{width:100%;text-align:justify;}
+.store select{width:10.3%;border:5px solid rgba(255,255,255,0.5);background-color:#dad8c1;text-align:center;color:#fff;font-size:15px;font-weight:bold;padding:3px 0;}
+.store label:nth-of-type(1) input{width:78%;border:5px solid rgba(255,255,255,0.5);background-color:#dad8c1;color:#fff;font-size:15px;font-weight:bold;
+									padding:3px 0; text-indent:10px;}
+.store label:nth-of-type(2) input{width:10%;border:5px solid rgba(255,255,255,0.5);background-color:#dad8c1;color:#fff;font-size:15px;font-weight:bold;
+									padding:3px 0;text-align:center;}
+
+
+.store p{text-align:left;font-weight:bold;font-size:15px;margin:8px 0;}
+
+.store table{width:100%;background-color:rgba(255,255,255,0.5);color:#999;}
+.store table tr{border-bottom:5px solid #dad8c1;}
+.store table tr th,.store table tr td{line-height:2;font-size:15px;}
+.store table tr th{font-weight:bold;text-align:center;}
+.store table tr td:nth-of-type(2){text-align:left;text-indent:10px;cursor:pointer;}
+
+.store ul{width:9%;margin:20px auto;}
+.store ul li{float:left;margin-right:10px;}

@@ -1,0 +1,237 @@
+@import url(reset.css);
+/*index.css*/
+
+/*common*/
+
+@font-face{font-family:nanum; src:url(../font/NanumGothic.ttf);}
+body{font-family:nanum;color:#fff;background:url(../images/background.png) no-repeat 50% 0;color:#555;}
+
+
+#wrap{width:100%;}
+
+
+
+
+
+
+/*fixed_Menu*/
+.fixed_Menu{width:1920px;margin:0 auto;}
+.fixed_Menu div.border{width:96%; height:92.5%;position:fixed;top:0;left:auto;border:35px solid #fff;background:#fff;}
+.fixed_Menu ul li:nth-of-type(1){position:fixed;top:7%;left:3.5%;z-index:99;}
+.fixed_Menu ul li:nth-of-type(1):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(2){position:fixed;top:7%;right:3.5%;z-index:99;}
+.fixed_Menu ul li:nth-of-type(2):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(3){position:fixed;bottom:7%;left:3.5%;z-index:99;}
+.fixed_Menu ul li:nth-of-type(3):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(4){position:fixed;bottom:7%;right:3.5%;z-index:99;cursor:pointer;}
+.fixed_Menu ul li:nth-of-type(4) dl{display:none;position:fixed;bottom:7%;right:3.5%;}
+.fixed_Menu ul li:nth-of-type(4) dl dd{float:left;}
+.fixed_Menu ul li:nth-of-type(4) dl dd:hover{opacity:0.9;}
+
+
+.fixed_Menu ul li:nth-of-type(4):hover dl{display:block;}
+
+/*fixed_menu_left*/
+#fixed_menu_left{position:fixed;top:30%;left:4%;z-index:99;}
+#fixed_menu_left span{display:block;width:25px;height:5px;background:#fcd9d5;margin:30px 0;text-indent:-9999px;overflow:hidden;cursor:pointer;}
+
+
+
+/*main*/
+.main{height:900px;}
+.main:after{content:"";display:block;overflow:hidden;}
+
+
+.main div span:nth-of-type(1){width:100%;display:block;margin:1.5% 65%;}
+.main div span:nth-of-type(2){width:100%;display:block;margin:0 15%;position:relative;top:-180px;left:0;}
+.main div span:nth-of-type(3){width:100%;display:block;margin:1.2% 65%;}
+
+
+
+.main h1 a{display:block;position:absolute;top:18%;left:45%;}
+.main p:nth-of-type(1){position:absolute;top:30%;left:30%;}
+.main p:nth-of-type(2){color:#fff;font-weight:bold;position:absolute;top:70%;left:45%;}
+.main ul{position:absolute;top:87%;left:40%;}
+.main ul li{float:left;margin:0 15px;color:#fff;}
+.main ul li a{color:#fff;text-decoration:none;font-size:20px;}
+.main ul li a:hover{text-decoration:underline;}
+
+
+/*container*/
+#container{clear:both;}
+#container section{height:900px;width:1920px;background:url(../images/round_b.png) no-repeat 50% 75%;position:relative;}
+
+#container section article:nth-of-type(1){cursor:pointer;z-index:99;}
+
+/*내추럴 클렌징 폼*/
+#container section:nth-of-type(1) div{position:absolute;width:90%;height:100%;margin-left:9%;}
+#container section:nth-of-type(1) div span:nth-of-type(1){display:block;position:absolute;top:15%;left:58%;}
+#container section:nth-of-type(1) div span:nth-of-type(2){display:block;position:absolute;top:70%;left:23%;}
+#container section:nth-of-type(1) div span:nth-of-type(3){display:block;position:absolute;top:50%;left:50%;}
+
+
+#container section:nth-of-type(1) article:nth-of-type(1){position:absolute;top:20%; left:42.5%;}
+
+
+#container section:nth-of-type(1) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(1) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:16%;text-align:center;}
+#container section:nth-of-type(1) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(1) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+
+
+
+
+/*슈퍼 스프라우트 세럼*/
+#container section:nth-of-type(2) div{position:absolute;width:90%;height:100%;margin-left:9%;}
+#container section:nth-of-type(2) div span:nth-of-type(1){display:block;position:absolute;top:15%;left:5%;}
+#container section:nth-of-type(2) div span:nth-of-type(2){display:block;position:absolute;top:40%;left:75%;}
+#container section:nth-of-type(2) div span:nth-of-type(3){display:block;position:absolute;top:75%;left:18%;}
+#container section:nth-of-type(2) div span:nth-of-type(4){display:block;position:absolute;top:77%;left:58%;}
+
+
+#container section:nth-of-type(2) article:nth-of-type(1){position:absolute;top:20%; left:42.5%;}
+
+#container section:nth-of-type(2) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(2) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:12%;text-align:center;}
+#container section:nth-of-type(2) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(2) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(3) strong{font-weight:bold;}
+
+
+/*알파인 베리 워터리 크림*/
+#container section:nth-of-type(3) div{position:absolute;width:100%;height:100%;}
+#container section:nth-of-type(3) div span:nth-of-type(1){display:block;position:absolute;top:40%;left:35px;}
+#container section:nth-of-type(3) div span:nth-of-type(2){display:block;position:absolute;top:40%;left:75%;}
+#container section:nth-of-type(3) div span:nth-of-type(3){display:block;position:absolute;top:65%;left:27%;}
+#container section:nth-of-type(3) div span:nth-of-type(4){display:block;position:absolute;top:10%;left:10%;}
+
+
+#container section:nth-of-type(3) article:nth-of-type(1){position:absolute;top:35%; left:33%;}
+
+#container section:nth-of-type(3) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(3) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:15%;text-align:center;}
+#container section:nth-of-type(3) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(3) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(3) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(3) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:5px;}
+#container section:nth-of-type(3) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+
+
+
+
+/*스킨 릴리프 데일리 쿠션*/
+#container section:nth-of-type(4) div{position:absolute;width:100%;height:100%;}
+#container section:nth-of-type(4) div span:nth-of-type(1){display:block;position:absolute;top:20%;left:18%;}
+#container section:nth-of-type(4) div span:nth-of-type(2){display:block;position:absolute;top:55%;left:70%;}
+#container section:nth-of-type(4) div span:nth-of-type(3){display:block;position:absolute;top:5%;left:75%;}
+#container section:nth-of-type(4) div span:nth-of-type(4){display:block;position:absolute;top:65%;left:15%;}
+
+
+#container section:nth-of-type(4) article:nth-of-type(1){position:absolute;top:20%; left:35%;}
+
+#container section:nth-of-type(4) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(4) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:16%;text-align:center;}
+#container section:nth-of-type(4) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(4) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(4) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(4) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(4) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+
+
+
+
+
+/*페이셜 마일드 필링*/
+#container section:nth-of-type(5) div{position:absolute;width:100%;height:100%;}
+#container section:nth-of-type(5) div span:nth-of-type(1){display:block;position:absolute;top:60%;left:18%;}
+#container section:nth-of-type(5) div span:nth-of-type(2){display:block;position:absolute;top:30%;left:75%;}
+#container section:nth-of-type(5) div span:nth-of-type(3){display:block;position:absolute;top:40%;left:68.5%;}
+#container section:nth-of-type(5) div span:nth-of-type(4){display:block;position:absolute;top:10%;left:5%;}
+#container section:nth-of-type(5) div span:nth-of-type(5){display:block;position:absolute;top:77%;left:60%;}
+
+
+#container section:nth-of-type(5) article:nth-of-type(1){position:absolute;top:15%; left:39%;}
+
+#container section:nth-of-type(5) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(5) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:17%;text-align:center;}
+#container section:nth-of-type(5) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(5) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(5) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(5) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(5) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+
+
+
+
+/*미라클 씨드 에센스*/
+#container section:nth-of-type(6) div{position:absolute;width:100%;height:100%;}
+#container section:nth-of-type(6) div span:nth-of-type(1){display:block;position:absolute;top:10%;left:15%;}
+#container section:nth-of-type(6) div span:nth-of-type(2){display:block;position:absolute;top:35%;left:65%;}
+#container section:nth-of-type(6) div span:nth-of-type(3){display:block;position:absolute;top:73%;left:30%;}
+#container section:nth-of-type(6) div span:nth-of-type(4){display:block;position:absolute;top:79%;left:62%;}
+#container section:nth-of-type(6) div span:nth-of-type(5){display:block;position:absolute;top:77%;left:57%;}
+
+#container section:nth-of-type(6) article:nth-of-type(1){position:absolute;top:20%; left:44%;}
+
+#container section:nth-of-type(6) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(6) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:14%;text-align:center;}
+#container section:nth-of-type(6) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(6) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+
+
+
+
+/*베이비 선 쿠션*/
+#container section:nth-of-type(7) div{position:absolute;width:100%;height:100%;}
+#container section:nth-of-type(7) div span:nth-of-type(1){display:block;position:absolute;top:30%;left:70%;}
+#container section:nth-of-type(7) div span:nth-of-type(2){display:block;position:absolute;top:60%;left:22%;z-index:10;}
+#container section:nth-of-type(7) div span:nth-of-type(3){display:block;position:absolute;top:50%;left:10%;z-index:5;}
+
+
+#container section:nth-of-type(7) article:nth-of-type(1){position:absolute;top:28%; left:38.5%;}
+
+#container section:nth-of-type(7) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(7) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:18%;text-align:center;}
+#container section:nth-of-type(7) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(7) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(7) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(7) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(7) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
+
+
+
+
+
+/*아로마 바디 워시 프레시 업&킵-캅*/
+#container section:nth-of-type(8) div{position:absolute;width:100%;height:100%;}
+#container section:nth-of-type(8) div span:nth-of-type(1){display:block;position:absolute;top:58%;left:13%;}
+#container section:nth-of-type(8) div span:nth-of-type(2){display:block;position:absolute;top:10%;left:70%;}
+#container section:nth-of-type(8) div span:nth-of-type(3){display:block;position:absolute;top:60%;left:68%;z-index:10;}
+#container section:nth-of-type(8) div span:nth-of-type(4){display:block;position:absolute;top:60%;left:65%;z-index:5;}
+
+#container section:nth-of-type(8) article:nth-of-type(1){position:absolute;top:17%; left:39%;}
+
+#container section:nth-of-type(8) article:nth-of-type(2){display:none;}
+
+#container section:nth-of-type(8) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:16%;text-align:center;}
+#container section:nth-of-type(8) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
+#container section:nth-of-type(8) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(8) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
+#container section:nth-of-type(8) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
+#container section:nth-of-type(8) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}

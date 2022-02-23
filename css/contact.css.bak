@@ -1,0 +1,62 @@
+@import url(reset.css);
+/*contact.css*/
+
+/*common*/
+
+@font-face{font-family:nanum; src:url(../font/NanumGothic.ttf);}
+body{font-family:nanum;background:#c1cfab;color:#fff;}
+
+
+#wrap{width:100%;}
+
+/*layout*/
+
+
+
+/*fixed_Menu*/
+.fixed_Menu{width:100%;margin:0 auto;}
+.fixed_Menu div.border{width:96%; height:92.5%;position:fixed;top:0;left:auto;border:35px solid #fff;}
+.fixed_Menu ul li:nth-of-type(1){position:fixed;top:7%;left:3.5%;}
+.fixed_Menu ul li:nth-of-type(1):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(2){position:fixed;top:7%;right:3.5%;}
+.fixed_Menu ul li:nth-of-type(2):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(3){position:fixed;bottom:7%;left:3.5%;}
+.fixed_Menu ul li:nth-of-type(3):hover{opacity:0.9;}
+.fixed_Menu ul li:nth-of-type(4){position:fixed;bottom:7%;right:3.5%;z-index:99;cursor:pointer;}
+.fixed_Menu ul li:nth-of-type(4) dl{display:none;position:fixed;bottom:7%;right:3.5%;}
+.fixed_Menu ul li:nth-of-type(4) dl dd{float:left;}
+.fixed_Menu ul li:nth-of-type(4) dl dd:hover{opacity:0.9;}
+
+
+.fixed_Menu ul li:nth-of-type(4):hover dl{display:block;}
+
+
+
+/*하위메뉴*/
+.bottom_Menu ul{position:absolute;top:87%;left:40%;}
+.bottom_Menu ul li{float:left;margin:0 15px;color:#fff;}
+.bottom_Menu ul li a{color:#fff;text-decoration:none;font-size:20px;}
+.bottom_Menu ul li a:hover{text-decoration:underline;}
+
+/*container*/
+#container{width:100%;margin:9.5% auto;text-align:center;position:fixed;top:0;left:auto;z-index:99;}
+#container h2{font-size:30px;font-weight:bold;margin-bottom:15px;color:#fff;}
+#container span.border{display:block; width:50px;height:3px;background-color:#fff;margin:0 auto;}
+
+#container > div{width:760px;margin:2% auto;text-align:justify;}
+#container > div p{margin-bottom:10px;width:100%;}
+#container > div p:nth-of-type(1) label:nth-of-type(1){width:360px;float:left;margin-bottom:10px;}
+#container > div p:nth-of-type(1) label input{width:360px;height:35px;background:rgba(255,255,255,0.5);border:none;}
+
+#container > div p:nth-of-type(1) label:nth-of-type(2){width:360px;float:right;margin-bottom:10px;}
+
+
+#container > div p:nth-of-type(2) label{width:100%;}
+#container > div p:nth-of-type(2) label input{width:100%;height:35px;background:rgba(255,255,255,0.5);border:none;}
+
+
+#container > div p:nth-of-type(3) label{width:100%;}
+#container > div p:nth-of-type(3) label input{width:100%;height:225px;background:rgba(255,255,255,0.5);border:none;}
+
+#container > div p:last-child{width:180px;height:50px;margin:30px auto;background:rgba(255,255,255,0.5);font-size:20px;font-weight:bold;
+							text-align:center;padding-top:20px;}
