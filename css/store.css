@@ -1,44 +1,9 @@
 @import url(reset.css);
 
-/*store.css*/
-
-
-/*common*/
-
 @font-face{font-family:nanum; src:url(../font/NanumGothic.ttf);}
-body{font-family:nanum;background:#dad8c1;color:#fff;}
+
+body{background:#dad8c1;color:#fff;}
 a{color:#fff;text-decoration:none;}
-
-#wrap{width:100%;}
-
-/*layout*/
-
-
-
-/*fixed_Menu*/
-.fixed_Menu{width:100%;margin:0 auto;}
-.fixed_Menu div.border{width:96%; height:92.5%;position:fixed;top:0;left:auto;border:35px solid #fff;}
-.fixed_Menu ul li:nth-of-type(1){position:fixed;top:7%;left:3.5%;}
-.fixed_Menu ul li:nth-of-type(1):hover{opacity:0.9;}
-.fixed_Menu ul li:nth-of-type(2){position:fixed;top:7%;right:3.5%;}
-.fixed_Menu ul li:nth-of-type(2):hover{opacity:0.9;}
-.fixed_Menu ul li:nth-of-type(3){position:fixed;bottom:7%;left:3.5%;}
-.fixed_Menu ul li:nth-of-type(3):hover{opacity:0.9;}
-.fixed_Menu ul li:nth-of-type(4){position:fixed;bottom:7%;right:3.5%;z-index:99;cursor:pointer;}
-.fixed_Menu ul li:nth-of-type(4) dl{display:none;position:fixed;bottom:7%;right:3.5%;}
-.fixed_Menu ul li:nth-of-type(4) dl dd{float:left;}
-.fixed_Menu ul li:nth-of-type(4) dl dd:hover{opacity:0.9;}
-
-
-.fixed_Menu ul li:nth-of-type(4):hover dl{display:block;}
-
-
-
-/*하위메뉴*/
-.bottom_Menu ul{position:absolute;top:87%;left:40%;}
-.bottom_Menu ul li{float:left;margin:0 15px;color:#fff;}
-.bottom_Menu ul li a{color:#fff;text-decoration:none;font-size:20px;}
-.bottom_Menu ul li a:hover{text-decoration:underline;}
 
 /*container*/
 #container{width:100%;margin:9% auto;text-align:center;position:fixed;top:0;left:auto;z-index:99;}

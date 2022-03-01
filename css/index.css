@@ -1,251 +1,375 @@
 @import url(reset.css);
-/*index.css*/
-
-/*common*/
 
 @font-face{font-family:nanum; src:url(../font/NanumGothic.ttf);}
-body{font-family:nanum;color:#fff;background:url(../images/background.png) no-repeat 50% 0;color:#555;}
 
-
-#wrap{width:100%;}
-
-@media (max-width:767px) {
-
+body{
+	font-family:nanum;
+	color:#555;
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-
+#wrap {
+	background:url(../images/background.png) no-repeat 50% 0 / cover;
+	width:100%;
+	overflow:hidden;
 }
-
-
-
-
-
-
-@media (min-width:1024px) {
-
-
 /*fixed_Menu*/
-.fixed_Menu{width:1920px;margin:0 auto;}
-.fixed_Menu div.border{width:96%; height:92.5%;position:fixed;top:0;left:auto;border:35px solid #fff;}
-.fixed_Menu ul li:nth-of-type(1){position:fixed;top:7%;left:3.5%;z-index:99;}
-.fixed_Menu ul li:nth-of-type(1):hover{opacity:0.9;}
-.fixed_Menu ul li:nth-of-type(2){position:fixed;top:7%;right:3.5%;z-index:99;}
-.fixed_Menu ul li:nth-of-type(2):hover{opacity:0.9;}
-.fixed_Menu ul li:nth-of-type(3){position:fixed;bottom:7%;left:3.5%;z-index:99;}
-.fixed_Menu ul li:nth-of-type(3):hover{opacity:0.9;}
-.fixed_Menu ul li:nth-of-type(4){position:fixed;bottom:7%;right:3.5%;z-index:99;cursor:pointer;}
-.fixed_Menu ul li:nth-of-type(4) dl{display:none;position:fixed;bottom:7%;right:3.5%;}
-.fixed_Menu ul li:nth-of-type(4) dl dd{float:left;}
-.fixed_Menu ul li:nth-of-type(4) dl dd:hover{opacity:0.9;}
-
-
-.fixed_Menu ul li:nth-of-type(4):hover dl{display:block;}
+.fixed_Menu .border span {
+	position:fixed;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:35px;
+	background:#fff;
+	z-index:10;
+}
+.fixed_Menu .border span.right {
+	left:auto;
+	right:0;
+	width:35px;
+	height:100%;
+}
+.fixed_Menu .border span.bottom {
+	top:auto;
+	bottom:0;
+	left:0;
+	right:auto;
+}
+.fixed_Menu .border span.left {
+	width:35px;
+	height:100%;
+}
+.fixed_Menu .mene-list li {
+	position:fixed;
+	top:0;
+	left:0;
+	width:80px;
+	height:80px;
+	margin:65px;
+	z-index:99;
+}
+.fixed_Menu .mene-list li a:hover {
+	opacity:0.9;
+}
+.fixed_Menu .mene-list li:nth-child(2) {
+	left:auto;
+	right:0;
+}
+.fixed_Menu .mene-list li:nth-child(3) {
+	top:auto;
+	bottom:0;
+}
+.fixed_Menu .mene-list li:nth-child(4) {
+	top:auto;
+	bottom:0;
+	left:auto;
+	right:0;
+}
+.fixed_Menu .mene-list li img {
+	width:100%;
+}
+.fixed_Menu ul li:nth-of-type(4) dl {
+	display:none;
+	position:absolute;
+	top:0;
+	left:-240px;
+	width:240px;
+	overflow:hidden;
+}
+.fixed_Menu ul li:nth-of-type(4) dl dd {
+	float:left;
+	width:80px;
+	height:80px;
+}
+.fixed_Menu ul li:nth-of-type(4) dl dd img {
+	width:100%;
+}
+.fixed_Menu ul li:nth-of-type(4):hover dl {
+	display:block;
+}
 
 /*fixed_menu_left*/
-#fixed_menu_left{position:fixed;top:30%;left:4%;z-index:99;}
-#fixed_menu_left span{display:block;width:25px;height:5px;background:#fcd9d5;margin:30px 0;text-indent:-9999px;overflow:hidden;cursor:pointer;}
-
-
-
+#fixed_menu_left {
+	position:fixed;
+	top:50%;
+	left:0;
+	margin-left:65px;
+	transform:translateY(-50%);
+	z-index:99;
+}
+#fixed_menu_left span {
+	display:block;
+	width:25px;
+	height:5px;
+	margin:30px 0;
+	background:#fcd9d5;
+	text-indent:-9999px;
+	overflow:hidden;
+	cursor:pointer;
+}
+ 
 /*main*/
-.main{height:900px;}
-.main:after{content:"";display:block;overflow:hidden;}
+.main {
+	position:relative;
+	height:100vh;
+}
+.main .bg span {
+	position:absolute;
+	top:0;
+	right:300px;
+}
+.main .bg span:nth-child(2) {
+	top:40%;
+	right:auto;
+	left:250px;
+	transform:translateY(-50%);
+}
+.main .bg span:nth-of-type(3) {
+	top:auto;
+	bottom:100px;
+	right:200px;
+}
 
-
-.main div span:nth-of-type(1){width:100%;display:block;margin:1.5% 65%;}
-.main div span:nth-of-type(2){width:100%;display:block;margin:0 15%;position:relative;top:-180px;left:0;}
-.main div span:nth-of-type(3){width:100%;display:block;margin:1.2% 65%;}
-
-
-
-.main h1 a{display:block;position:absolute;top:18%;left:45%;}
-.main p:nth-of-type(1){position:absolute;top:30%;left:30%;}
-.main p:nth-of-type(2){color:#fff;font-weight:bold;position:absolute;top:70%;left:45%;}
-.main ul{position:absolute;top:87%;left:40%;}
-.main ul li{float:left;margin:0 15px;color:#fff;}
-.main ul li a{color:#fff;text-decoration:none;font-size:20px;}
-.main ul li a:hover{text-decoration:underline;}
-
+.main .main-txt {
+	position:absolute;
+	top:45%;
+	left:0;
+	width:100%;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	transform:translateY(-50%);
+}
+.main .main-txt .txt-img {
+	width:calc(100% - 200px);
+	margin:10px auto;
+}
+.main .main-txt .txt-img img {
+	max-width:100%;
+}
+.main .bottom-menu {
+	position:absolute;
+	bottom:100px;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+.main .bottom-menu li {
+	display:inline-block;
+	margin:0 15px;
+	color:#fff;
+}
+.main .bottom-menu li a {
+	padding:3px 0;
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+}
+.main .bottom-menu li a:hover {
+	border-bottom:1px solid #fff;
+} 
 
 /*container*/
-#container{clear:both;}
-#container section{height:900px;width:1920px;background:url(../images/round_b.png) no-repeat 50% 75%;position:relative;}
-
-#container section article:nth-of-type(1){cursor:pointer;z-index:99;}
+#container > section {
+	position:relative;
+	height:100vh;
+	background:url(../images/round_b.png) no-repeat center / 800px;
+}
+#container .bg span {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+#container > section article {
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:700px;
+	transform:translate(-50%, -50%);
+	text-align:center;
+	cursor:pointer;
+	z-index:99;
+}
+#container > section article h2 {
+	font-size:30px;
+	margin-bottom:20px;
+}
+#container > section article p:nth-of-type(1) {
+	font-size:20px;
+	margin-bottom:30px;
+}
+#container > section article span {
+	display:block;
+	margin-bottom:30px;
+	font-size:20px;
+}
+#container > section article p:nth-of-type(2) {
+	margin-bottom:30px;
+	font-size:15px;
+}
+#container > section article p:nth-of-type(3) {
+	font-size:14px;
+	line-height:1.5;
+}
+#container > section article p:nth-of-type(3) strong {
+	font-weight:bold;
+}
+#container > section article:last-child {
+	display:none;
+}
 
 /*내추럴 클렌징 폼*/
-#container section:nth-of-type(1) div{position:absolute;width:90%;height:100%;margin-left:9%;}
-#container section:nth-of-type(1) div span:nth-of-type(1){display:block;position:absolute;top:15%;left:58%;}
-#container section:nth-of-type(1) div span:nth-of-type(2){display:block;position:absolute;top:70%;left:23%;}
-#container section:nth-of-type(1) div span:nth-of-type(3){display:block;position:absolute;top:50%;left:50%;}
-
-
-#container section:nth-of-type(1) article:nth-of-type(1){position:absolute;top:20%; left:42.5%;}
-
-
-#container section:nth-of-type(1) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(1) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:16%;text-align:center;}
-#container section:nth-of-type(1) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(1) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(1) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
-
-
+.product1 .bg span:nth-child(1) {
+	width:349px;
+	top:calc(50% - 160px) !important;
+	left:calc(50% + 350px) !important;
+}
+.product1 .bg span:nth-child(2) {
+	top:calc(50% + 160px) !important;
+	left:calc(50% - 350px) !important;
+}
+.product1 .bg span:nth-child(3) {
+	top:calc(50% + 200px) !important;
+	left:calc(50% + 400px) !important;
+}
 
 /*슈퍼 스프라우트 세럼*/
-#container section:nth-of-type(2) div{position:absolute;width:90%;height:100%;margin-left:9%;}
-#container section:nth-of-type(2) div span:nth-of-type(1){display:block;position:absolute;top:15%;left:5%;}
-#container section:nth-of-type(2) div span:nth-of-type(2){display:block;position:absolute;top:40%;left:75%;}
-#container section:nth-of-type(2) div span:nth-of-type(3){display:block;position:absolute;top:75%;left:18%;}
-#container section:nth-of-type(2) div span:nth-of-type(4){display:block;position:absolute;top:77%;left:58%;}
-
-
-#container section:nth-of-type(2) article:nth-of-type(1){position:absolute;top:20%; left:42.5%;}
-
-#container section:nth-of-type(2) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(2) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:12%;text-align:center;}
-#container section:nth-of-type(2) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(2) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-#container section:nth-of-type(2) article:nth-of-type(2) p:nth-of-type(3) strong{font-weight:bold;}
-
+.product2 .bg span:nth-child(1) {
+	top:calc(50% - 200px) !important;
+	left:calc(50% - 600px) !important;
+}
+.product2 .bg span:nth-child(2) {
+	left:calc(50% + 600px) !important;
+}
+.product2 .bg span:nth-child(3) {
+	top:calc(50% + 200px) !important;
+	left:calc(50% - 350px) !important;
+}
+.product2 .bg span:nth-child(4) {
+	top:calc(50% + 300px) !important;
+	left:calc(50% + 300px) !important;
+}
 
 /*알파인 베리 워터리 크림*/
-#container section:nth-of-type(3) div{position:absolute;width:100%;height:100%;}
-#container section:nth-of-type(3) div span:nth-of-type(1){display:block;position:absolute;top:40%;left:35px;}
-#container section:nth-of-type(3) div span:nth-of-type(2){display:block;position:absolute;top:40%;left:75%;}
-#container section:nth-of-type(3) div span:nth-of-type(3){display:block;position:absolute;top:65%;left:27%;}
-#container section:nth-of-type(3) div span:nth-of-type(4){display:block;position:absolute;top:10%;left:10%;}
-
-
-#container section:nth-of-type(3) article:nth-of-type(1){position:absolute;top:35%; left:33%;}
-
-#container section:nth-of-type(3) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(3) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:15%;text-align:center;}
-#container section:nth-of-type(3) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(3) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(3) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(3) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:5px;}
-#container section:nth-of-type(3) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
-
-
+.product3 .bg span:nth-child(1) {
+	top:calc(50% + 250px) !important;
+	left:calc(50% - 600px) !important;
+}
+.product3 .bg span:nth-child(2) {
+	width:238px;
+	left:calc(50% + 600px) !important;
+}
+.product3 .bg span:nth-child(3) {
+	top:calc(50% + 200px) !important;
+	left:calc(50% - 350px) !important;
+}
+.product3 .bg span:nth-child(4) {
+	top:calc(50% - 300px) !important;
+	left:calc(50% - 500px) !important;
+}
 
 /*스킨 릴리프 데일리 쿠션*/
-#container section:nth-of-type(4) div{position:absolute;width:100%;height:100%;}
-#container section:nth-of-type(4) div span:nth-of-type(1){display:block;position:absolute;top:20%;left:18%;}
-#container section:nth-of-type(4) div span:nth-of-type(2){display:block;position:absolute;top:55%;left:70%;}
-#container section:nth-of-type(4) div span:nth-of-type(3){display:block;position:absolute;top:5%;left:75%;}
-#container section:nth-of-type(4) div span:nth-of-type(4){display:block;position:absolute;top:65%;left:15%;}
-
-
-#container section:nth-of-type(4) article:nth-of-type(1){position:absolute;top:20%; left:35%;}
-
-#container section:nth-of-type(4) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(4) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:16%;text-align:center;}
-#container section:nth-of-type(4) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(4) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(4) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(4) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(4) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
-
-
-
+.product4 .bg span:nth-child(1) {
+	top:calc(50% - 100px) !important;
+	left:calc(50% - 550px) !important;
+}
+.product4 .bg span:nth-child(2) {
+	width:304px;
+	top:calc(50% + 150px) !important;
+	left:calc(50% + 550px) !important;
+}
+.product4 .bg span:nth-child(3) {
+	top:calc(50% - 300px) !important;
+	left:calc(50% + 350px) !important;
+}
+.product4 .bg span:nth-child(4) {
+	top:calc(50% + 300px) !important;
+	left:calc(50% - 350px) !important;
+}
 
 /*페이셜 마일드 필링*/
-#container section:nth-of-type(5) div{position:absolute;width:100%;height:100%;}
-#container section:nth-of-type(5) div span:nth-of-type(1){display:block;position:absolute;top:60%;left:18%;}
-#container section:nth-of-type(5) div span:nth-of-type(2){display:block;position:absolute;top:30%;left:75%;}
-#container section:nth-of-type(5) div span:nth-of-type(3){display:block;position:absolute;top:40%;left:68.5%;}
-#container section:nth-of-type(5) div span:nth-of-type(4){display:block;position:absolute;top:10%;left:5%;}
-#container section:nth-of-type(5) div span:nth-of-type(5){display:block;position:absolute;top:77%;left:60%;}
-
-
-#container section:nth-of-type(5) article:nth-of-type(1){position:absolute;top:15%; left:39%;}
-
-#container section:nth-of-type(5) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(5) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:17%;text-align:center;}
-#container section:nth-of-type(5) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(5) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(5) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(5) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(5) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
-
-
+.product5 .bg span:nth-child(1) {
+	top:calc(50% + 350px) !important;
+	left:calc(50% - 400px) !important;
+}
+.product5 .bg span:nth-child(2) {
+	left:calc(50% + 600px) !important;
+}
+.product5 .bg span:nth-child(3) {
+	width:165px;
+	left:calc(50% + 400px) !important;
+}
+.product5 .bg span:nth-child(4) {
+	top:calc(50% - 200px) !important;
+	left:calc(50% - 600px) !important;
+}
+.product5 .bg span:nth-child(5) {
+	top:calc(50% + 250px) !important;
+	left:calc(50% + 300px) !important;
+}
 
 /*미라클 씨드 에센스*/
-#container section:nth-of-type(6) div{position:absolute;width:100%;height:100%;}
-#container section:nth-of-type(6) div span:nth-of-type(1){display:block;position:absolute;top:10%;left:15%;}
-#container section:nth-of-type(6) div span:nth-of-type(2){display:block;position:absolute;top:35%;left:65%;}
-#container section:nth-of-type(6) div span:nth-of-type(3){display:block;position:absolute;top:73%;left:30%;}
-#container section:nth-of-type(6) div span:nth-of-type(4){display:block;position:absolute;top:79%;left:62%;}
-#container section:nth-of-type(6) div span:nth-of-type(5){display:block;position:absolute;top:77%;left:57%;}
-
-#container section:nth-of-type(6) article:nth-of-type(1){position:absolute;top:20%; left:44%;}
-
-#container section:nth-of-type(6) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(6) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:14%;text-align:center;}
-#container section:nth-of-type(6) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(6) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(6) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
-
-
+.product6 .bg span:nth-child(1) {
+	top:calc(50% - 320px) !important;
+	left:calc(50% - 600px) !important;
+}
+.product6 .bg span:nth-child(2) {
+	width:600px;
+	top:calc(50% + 200px) !important;
+	left:calc(50% + 400px) !important;
+}
+.product6 .bg span:nth-child(3) {
+	top:calc(50% + 300px) !important;
+	left:calc(50% - 200px) !important;
+}
+.product6 .bg span:nth-child(4) {
+	top:calc(50% + 300px) !important;
+	left:calc(50% + 350px) !important;
+}
+.product6 .bg span:nth-child(5) {
+	top:calc(50% + 250px) !important;
+	left:calc(50% + 250px) !important;
+}
 
 /*베이비 선 쿠션*/
-#container section:nth-of-type(7) div{position:absolute;width:100%;height:100%;}
-#container section:nth-of-type(7) div span:nth-of-type(1){display:block;position:absolute;top:30%;left:70%;}
-#container section:nth-of-type(7) div span:nth-of-type(2){display:block;position:absolute;top:60%;left:22%;z-index:10;}
-#container section:nth-of-type(7) div span:nth-of-type(3){display:block;position:absolute;top:50%;left:10%;z-index:5;}
-
-
-#container section:nth-of-type(7) article:nth-of-type(1){position:absolute;top:28%; left:38.5%;}
-
-#container section:nth-of-type(7) article:nth-of-type(2){display:none;}
-
-#container section:nth-of-type(7) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:18%;text-align:center;}
-#container section:nth-of-type(7) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(7) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(7) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(7) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(7) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
-
-
-
+.product7 .bg span:nth-child(1) {
+	width:315px;
+	left:calc(50% + 520px) !important;
+}
+.product7 .bg span:nth-child(2) {
+	top:calc(50% + 200px) !important;
+	left:calc(50% - 400px) !important;
+	z-index:1;
+}
+.product7 .bg span:nth-child(3) {
+	top:calc(50% + 250px) !important;
+	left:calc(50% - 500px) !important;
+}
 
 /*아로마 바디 워시 프레시 업&킵-캅*/
-#container section:nth-of-type(8) div{position:absolute;width:100%;height:100%;}
-#container section:nth-of-type(8) div span:nth-of-type(1){display:block;position:absolute;top:58%;left:13%;}
-#container section:nth-of-type(8) div span:nth-of-type(2){display:block;position:absolute;top:10%;left:70%;}
-#container section:nth-of-type(8) div span:nth-of-type(3){display:block;position:absolute;top:60%;left:68%;z-index:10;}
-#container section:nth-of-type(8) div span:nth-of-type(4){display:block;position:absolute;top:60%;left:65%;z-index:5;}
+.product8 .bg span:nth-child(1) {
+	top:calc(50% + 320px) !important;
+	left:calc(50% - 600px) !important;
+}
+.product8 .bg span:nth-child(2) {
+	top:calc(50% - 200px) !important;
+	left:calc(50% + 400px) !important;
+}
+.product8 .bg span:nth-child(3) {
+	width:500px;
+	top:calc(50% + 300px) !important;
+	left:calc(50% + 350px) !important;
+	z-index:1;
+}
+.product8 .bg span:nth-child(4) {
+	top:calc(50% + 350px) !important;
+	left:calc(50% + 350px) !important;
+}
 
-#container section:nth-of-type(8) article:nth-of-type(1){position:absolute;top:17%; left:39%;}
 
-#container section:nth-of-type(8) article:nth-of-type(2){display:none;}
 
-#container section:nth-of-type(8) article:nth-of-type(2){width:818px;margin-left:28.5%;position:absolute;top:0%;z-index:99;padding-top:16%;text-align:center;}
-#container section:nth-of-type(8) article:nth-of-type(2) h2{font-size:30px;margin-bottom:20px;}
-#container section:nth-of-type(8) article:nth-of-type(2) p:nth-of-type(1){font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(8) article:nth-of-type(2) span{display:block;font-size:20px;margin-bottom:30px;}
-#container section:nth-of-type(8) article:nth-of-type(2) p:nth-of-type(2){font-size:15px;margin-bottom:30px;}
-#container section:nth-of-type(8) article:nth-of-type(2) p:nth-of-type(3){line-height:1.5;font-size:14px;}
-
+@media (min-width:1600px) {
 
 }

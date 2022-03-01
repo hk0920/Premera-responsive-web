@@ -1,9 +1,10 @@
-@charset "utf-8"
+@charset "utf-8";
+@font-face{font-family:nanum; src:url(../font/NanumGothic.ttf);}
+
 /* reset.css */
-small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,time,mark,audio,video{margin:0;padding:0;}
+* {margin:0;padding:0;}
 
 article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display:block;}
-
 html,body{width:100%;height:100%;}
 body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table{margin:0;padding:0;}
 table{border-collapse:collapse;}
@@ -18,7 +19,103 @@ img,li{vertical-align:middle;}
 hr{display:none;}
 #skipNavi,.blind,.hidden{position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;visibility:hidden;}
 
-
 li img, dd img{vertical-align:top;}
 img{max-width:100%;}
-/*width값이 %로 된 이미지들이 브라우저 폭이 줄 경우 비례를 맞추어 줄도록 하기위해 사용 ipad 사이즈에서*/
+
+body{
+	font-family:nanum;
+	color:#555;
+}
+/*fixed_Menu*/
+.fixed_Menu .border span {
+	position:fixed;
+	top:0;
+	left:0;
+	display:block;
+	width:100%;
+	height:35px;
+	background:#fff;
+	z-index:10;
+}
+.fixed_Menu .border span.right {
+	left:auto;
+	right:0;
+	width:35px;
+	height:100%;
+}
+.fixed_Menu .border span.bottom {
+	top:auto;
+	bottom:0;
+	left:0;
+	right:auto;
+}
+.fixed_Menu .border span.left {
+	width:35px;
+	height:100%;
+}
+.fixed_Menu .mene-list li {
+	position:fixed;
+	top:0;
+	left:0;
+	width:80px;
+	height:80px;
+	margin:65px;
+	z-index:99;
+}
+.fixed_Menu .mene-list li a:hover {
+	opacity:0.9;
+}
+.fixed_Menu .mene-list li:nth-child(2) {
+	left:auto;
+	right:0;
+}
+.fixed_Menu .mene-list li:nth-child(3) {
+	top:auto;
+	bottom:0;
+}
+.fixed_Menu .mene-list li:nth-child(4) {
+	top:auto;
+	bottom:0;
+	left:auto;
+	right:0;
+}
+.fixed_Menu .mene-list li img {
+	width:100%;
+}
+.fixed_Menu ul li:nth-of-type(4) dl {
+	display:none;
+	position:absolute;
+	top:0;
+	left:-240px;
+	width:240px;
+	overflow:hidden;
+}
+.fixed_Menu ul li:nth-of-type(4) dl dd {
+	float:left;
+	width:80px;
+	height:80px;
+}
+.fixed_Menu ul li:nth-of-type(4) dl dd img {
+	width:100%;
+}
+.fixed_Menu ul li:nth-of-type(4):hover dl {
+	display:block;
+}
+.bottom_Menu ul {
+	position:absolute;
+	top:87%;
+	left:40%;
+}
+.bottom_Menu ul li{
+	display:inline-block;
+	margin:0 15px;
+	color:#fff;
+}
+.bottom_Menu ul li a {
+	font-size:20px;
+	color:#fff;
+	text-decoration:none;
+}
+.bottom_Menu ul li a:hover {
+	text-decoration:underline;
+}
