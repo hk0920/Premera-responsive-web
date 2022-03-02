@@ -1,5 +1,5 @@
-# Premera-responsive-web
-프리메라 리뉴얼 반응형 웹
+# Premera-web
+프리메라 리뉴얼 웹
 
 ![image](https://user-images.githubusercontent.com/75876034/155290907-c8ef5ad0-fffc-47c9-9628-434c8d534eee.png)
 
@@ -16,8 +16,5 @@
 >     - 기존 웹 사이트를 다른 디자인으로 리뉴얼   
 >     - html5 시멘틱 태그 이용한 웹 화면 뼈대 및 레이아웃 구현  
 >     - css3를 이용한 화면 디자인 구현  
->     - media query 이용한 디바이스 해상도 별 반응형 스타일   
->     - 웹 접근성 준수, 크로스 브라우징 검사 완료  
-
 #### 화면
->   실제 화면이 궁금하시다면 https://hk0920.github.io/Icox/ 이동 후 확인해주세요.
+>   실제 화면이 궁금하시다면 https://hk0920.github.io/Primera/ 이동 후 확인해주세요.
